@@ -37,7 +37,7 @@ class SimpleDB:
             self.set(name, None)
 
     def num_equal_to(self, value):
-        # print the number of value equal to value in the database
+        # print the number of value equal to value in the database, but not yet O(log(N))
         resu = 0
         for key, value_db in self.database.items():
             if value == value_db:
