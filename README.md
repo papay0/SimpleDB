@@ -1,3 +1,7 @@
+# Info:
+Name: Arthur Papailhau
+Mail: papailhau@gmail.com
+
 # SimpleDB
 Python version: python 3.5
 # Data Commands
