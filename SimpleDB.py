@@ -53,9 +53,6 @@ class SimpleDB:
         sys.exit()
 
     def unset(self, name):
-        value = self.get_value_db(name)
-        if value is not None:
-            self.decremente_count_value(value)
         # set None to the database for the key name, and move the old value to the stack_history
         if name in self.database:
             self.set(name, None)
@@ -146,6 +143,7 @@ class SimpleDB:
             args = input().split()
             # Check arguments
             self.command_valid(args)
+
 
 if __name__ == '__main__':
     simpleDB = SimpleDB()
